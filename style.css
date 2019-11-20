@@ -1,14 +1,43 @@
 #clock {
+	display: grid;
+	min-height: 100%;
+	grid-template-rows: 50px 200px;
+	grid-template-columns: 100px 200px 100px;
+	grid-template-areas: 	"clockimg hour"
+							"hour minute second";
+
 }
 
 #clock img {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }
 
 #hour {
+	grid-area: hour;
+	transform: rotate(30deg);
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }
 
 #minute {
+	grid-area: minute;
+	transform: rotate(6deg);
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }
 
 #second {
+	transform: rotate(0.1deg);
+	grid-area: second;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }

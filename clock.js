@@ -46,7 +46,7 @@ setInterval(function(){
 	secondHand.style.transform = "rotate(" + secondDegUpdated + "deg)"
 	minuteHand.style.transform = "rotate(" + minuteDegUpdated + "deg)"
 	hourHand.style.transform = "rotate(" + hourDegUpdated + "deg)"
-	secondDegUpdated += 1
+	secondDegUpdated += 6
 	minuteDegUpdated += .1
 	hourDegUpdated += 1/120
  }, 1000);
